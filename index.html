@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Reels Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Instagram Reels Downloader</h1>
+        <p>Paste your Instagram Reels link below to download videos</p>
+    </header>
+
+    <main>
+        <div class="input-container">
+            <input type="text" id="urlInput" placeholder="Paste Instagram Reels link here...">
+            <button id="pasteBtn"><i class="fas fa-paste"></i></button>
+        </div>
+        
+        <div id="downloadSection" class="hidden">
+            <button id="downloadBtn" class="download-btn">
+                <i class="fas fa-download"></i> Download Video
+            </button>
+        </div>
+    </main>
+
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>🎉 Download completed successfully!</p>
+            <button id="nextDownload" class="download-btn">
+                <i class="fas fa-redo"></i> Download Next Video
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Instagram Reels Downloader. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
